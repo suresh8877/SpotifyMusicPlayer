@@ -170,6 +170,10 @@ h2{
     width: 100%;
     border-radius: 4px;
 }
+#lister{
+    cursor: pointer;
+    height: min-content;
+}
 .card .title{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
