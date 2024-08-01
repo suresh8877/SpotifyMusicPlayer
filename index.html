@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="data/fav.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="left">
+        <div class="header">
+            <div class="logospot flex">
+                <img class="h-2 icon invert" src="data/logo.svg" alt="Spotify">
+                <img id="hamburger" src="data/hamburger.svg" alt="Menu">
+            </div>
+            <ul class="home">
+                <li><img class="h-1 invert" src="data/home.svg" alt="Home">Home</li>
+                <li><img class="h-1 invert" src="data/search.svg" alt="Search">Search</li>
+            </ul>
+        </div>
+
+        <div class="library">
+            <nav class="navleft flex">
+                <div class="flex">
+                    <img class="invert h-1" src="data/library.svg" alt="Add">
+                    <h>Your Library</h>
+                </div>
+                <img class="invert h-1" src="data/plus.svg" alt="Add">
+            </nav>
+
+            <div class="songlist">
+                <ol>
+                </ol>
+            </div>
+            
+            <footer>
+                <div>
+                    <div>
+                        <div><span>Legal</span></div>
+                        <div><span>Safety & Privacy Center</span></div>
+                        <div><span>Privacy Policy</span></div>
+                        <div><span>Cookies</span></div>
+                        <div><span>About Ads</span></div>
+                        <div><span>Accessibility</span></div>
+                    </div>
+                </div>
+                <button class="flex"><img class="invert h-1" src="data/lang.svg" alt="Language">English</button>
+            </footer>
+        </div>
+    </div>
+    <div class="right">
+        <nav class="nav-right flex ">
+            <div>
+                <img class="invert navigator h-1" src="data/l.svg" alt="back">
+                <img class="invert navigator h-1" src="data/r.svg" alt="forward">
+                <img id="hamburger2" src="data/hamburger.svg" alt="Menu">
+            </div>
+            <div>
+                <button>Sign up</button>
+                <button>Log In</button>
+            </div>
+        </nav>
+        <div class="cardcontainer">
+            <h2>Popular Songs</h2>
+            <div id="albums" class="carditem flex">
+                <div id="albums" class="card flex">
+                    <img class="cardimg" src="data/cardimg.JPG" alt="GTA">
+                    <h class="title">80s VIBES GTA VICE CITY</h>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptate eius ipsa nesciunt sed modi quisquam. Quia ab vitae laborum facere pariatur quis repellendus odio ducimus aliquam mollitia. Iure, quia!
+                    </p>
+                    <img class="playbtn " src="data/play.svg" alt="Play">
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="btu flex">
+                <h>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum reprehenderit quaerat.</h>
+                <div>
+                    <img id="previous" src="data/pervious.svg" alt="Previous">
+                    <img id="play" src="data/play2.svg" alt="Play">
+                    <img id="next" src="data/next.svg" alt="Next">
+                </div>
+                <div class="vol">
+                    <div class="volbar">
+                        <div class="circle"></div>
+                    </div>
+                    <img class="level" src="data/vol.svg" alt="Volume">
+                </div>        
+            </div>
+            <div id="bar"> 
+                <div id="statusbar">
+                    <div id="circle2"></div>
+                </div>
+                <div id="timer">
+                    00:00/00:00
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Mono:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    display: flex;
+}
+
+.header {
+    height: 21vh;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #121212;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+
+}
+.library{
+    margin: 10px 0px;
+    height:65vh;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #121212;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.home {
+    align-items: center;
+    padding: 0px 0px;
+    height: 70%;
+}
+
+.icon {
+    padding: 7px 0px;
+}
+
+.home {
+    list-style: none;
+}
+
+.home li {
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+    gap: 15px;
+    width: 35%;
+    cursor: pointer;;
+}
+.navleft {
+    justify-content: space-between;
+}
+.navleft div{
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+h{
+    font-size: 18px;
+    padding-top: 5px;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+footer button{
+    border-radius: 25px;
+    font-size: 15px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: 1px white solid;
+    font-weight: bolder;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+}
+footer button:hover{
+    background-color:rgb(48, 47, 47) ;
+}
+footer div{
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.left {
+    width: 25vw;
+    height: 90vh;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+    padding: 10px 0px;
+    padding-right: 10px;
+}
+.nav-right{
+    align-items: center;
+    padding: 10px 20px;
+    height: 10%;
+    justify-content: space-between;
+    background-color: #101010;
+    border-top-left-radius: 5xp;
+    border-top-right-radius: 5xp;
+
+}
+.nav-right button{
+    border-radius: 22px;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    outline: none;
+    border:none;
+}
+.nav-right button:hover{
+    font-size: 16px;
+    background-color: #dee0e0;
+}
+.cardcontainer{
+    padding:10px 20px;
+    height: 430px;
+    background-color: #1e1e1e;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.card{
+    height: 220px;
+    width: 12vw;
+    position: relative;
+    flex-direction: column;
+    overflow:hidden;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(36, 34, 34);
+    gap: 5px;
+
+}
+.carditem{
+    flex-wrap: wrap;
+    gap: 25px;
+    height: 70%;
+    padding: 15px 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.card .cardimg{
+    object-fit: cover;
+    justify-content: center;
+    width: 100%;
+    border-radius: 4px;
+}
+.card .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+.card p{
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 200;
+    overflow: hidden;
+}
+.playbtn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 10px;
+    bottom: 0px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.card:hover{
+    background-image: linear-gradient(#08000000, #3e4346 40%);
+}
+.card:hover .playbtn{
+    bottom: 60px;
+    opacity:1;
+}
+.player{
+    width: 96%;
+    height:10%;
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+.player img{
+    height: 35px;
+    cursor: pointer;
+}
+.songlist{
+    padding: 10px 5px;
+    height: 62%;
+    overflow: auto;
+    margin: 5px 0px;
+}
+ol li{
+    border: 1px white solid;
+    display: flex;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 10px;
+    padding: 5px 5px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+ol li img{
+    filter: invert(1);
+    width: 25%;
+    height: 20px;
+}
+ol li h{
+    font-size: 15px;
+    width: 60%;
+    height: 40px;
+    overflow: hidden;
+}
+.btu{
+    justify-content: space-between;
+}
+.btu h{
+    width: 40%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.btu .vol{
+    width:40%;
+}
+#bar{
+    padding:1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+#statusbar{
+    width: 85%;
+    background-color: #5a5757;
+    height: 7px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.vol{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 20px;
+}
+.volbar{
+    width: 50%;
+    background-color: #5a5757;
+    height: 7px;
+    border-radius: 15px;
+    position: relative;   
+    cursor: pointer;
+}
+.volbar .circle{
+    height: 15px;
+    width: 15px;
+    background-color:rgb(151, 151, 153);
+    border-radius: 15px;
+    bottom: -3.5px;
+    left:25%;
+    position: absolute;
+    transition: all 1s;
+}
+#timer{
+   color: #f0ebeb;
+   font-size: 20px;
+}
+#circle2{
+    height: 15px;
+    width: 15px;
+    background-color:rgb(151, 151, 153);
+    border-radius: 15px;
+    bottom: -3.5px;
+    left:0%;
+    position: absolute;
+    transition: all .5s;
+}
+
+
+/* Mobile */
+
+.logospot{
+    justify-content: space-between;
+    align-items: center;
+}
+#hamburger,#hamburger2{
+    height: 25px;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+
+    .left{
+        position: absolute;
+        z-index: 6;
+        left: -400px;
+        transition: all 1.5s cubic-bezier(0.25, 0.1, 0.55, 0.62);
+        width: 100%;
+        height: 100vh;
+        background-color: #101010;
+    }
+    #hamburger,#hamburger2{
+        display: block;
+    }
+    .cardcontainer{
+        margin: 0px 13px;
+        height: 72vh;
+    }
+    .right{
+        height:105%;
+        width: 100%;
+    }
+    .player{
+        width: 84%;
+        margin: 0px 9px;
+        height: 7%;
+    }
+    .btu h{
+        width: 30%;
+        font-size: 15px;
+    }
+    .btu div img{
+        height: 25px;
+    }
+    #bar{
+        width: 100%;
+        gap: 20px;
+        justify-content:space-between;
+    }
+    .carditem{
+    height: 88%;
+    padding: 7px 10px;
+    margin: 4px 0px;
+    }
+    .card{
+    height: 36vh;
+    width: 100%;
+    margin: 8px 7px;
+    }
+    .navigator{
+        display: none;
+    }
+
+}

@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.border {
+    border: 2px solid blue;
+}
+
+.h-1 {
+    height: 25px;
+}
+
+.h-2 {
+    height: 35px;
+}
+
+.justify {
+    justify-content: center;
+}
+
+
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#1e1e1e;
+    /* Dark background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #808080;
+    /* Darker handle color */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+    /* Lighter handle color on hover */
+}
